@@ -14,7 +14,7 @@ public class strobogrammatic_num {
 
         for (String middle: middles) {
             if (n != length)
-            result.add("0" + middle + "0");
+                result.add("0" + middle + "0");
             result.add("8" + middle + "8");
             result.add("1" + middle + "1");
             result.add("9" + middle + "6");
