@@ -1,8 +1,13 @@
-package CAT2;
+package FAT;
+
+/*
+Time Complexity: O(log N)
+Space Complexity: O(1)
+ */
 
 import java.util.Scanner;
 
-class binary_palindrome {
+public class Binary_Palindrome {
     public static boolean Palindrome(int N) {
         String s = Integer.toBinaryString(N);
         int i = 0, j = s.length() - 1;
@@ -17,9 +22,8 @@ class binary_palindrome {
     }
 
     public static void main(String[] args) {
-        Scanner s1 = new Scanner(System.in);
-        System.out.println("Enter the number:");
-        int x = s1.nextInt();
-        System.out.println(Palindrome(x));
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        System.out.println(Palindrome(num));
     }
 }
